@@ -8,13 +8,16 @@
       <SelectionState runConfigName="Home_prev">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="Login_prev">
+      <SelectionState runConfigName="Intent_prev">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="Register_prev">
+      <SelectionState runConfigName="Calculator_prev">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="My_App_Prev">
+      <SelectionState runConfigName="Dashboard_prev">
+        <option name="selectionMode" value="DROPDOWN" />
+      </SelectionState>
+      <SelectionState runConfigName="MyScreen_prev">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
     </selectionStates>

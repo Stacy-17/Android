@@ -8,6 +8,7 @@ import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.size
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Text
@@ -24,6 +25,8 @@ import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
 import com.luna.onlineapp.R
+import com.luna.onlineapp.navigation.ROUTE_CALCULATOR
+import com.luna.onlineapp.navigation.ROUTE_INTENT
 import com.luna.onlineapp.ui.theme.PurpleGrey40
 import com.luna.onlineapp.ui.theme.PurpleGrey80
 import com.luna.onlineapp.ui.theme.another
@@ -39,11 +42,11 @@ fun My_App_Screen(navController:NavHostController) {
         Image(painter = painterResource(id = R.drawable.ap1),
             contentDescription = "my_app",
             modifier = Modifier
-                .fillMaxWidth())
+                .size(300.dp))
 
         Spacer(modifier = Modifier.height(40.dp))
 
-    Button(onClick = {},
+    Button(onClick = {navController.navigate(ROUTE_CALCULATOR)},
         colors = ButtonDefaults.buttonColors(color),
         modifier = Modifier.fillMaxWidth()) {
         Text("Calculator",
@@ -55,7 +58,7 @@ fun My_App_Screen(navController:NavHostController) {
     }
         Spacer(modifier = Modifier.height(40.dp))
 
-    Button(onClick = {},
+    Button(onClick = {navController.navigate(ROUTE_INTENT)},
         colors = ButtonDefaults.buttonColors(another),
         modifier = Modifier.fillMaxWidth()) {
         Text("Intent",

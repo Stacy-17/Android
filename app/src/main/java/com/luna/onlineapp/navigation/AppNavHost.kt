@@ -6,9 +6,13 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.luna.onlineapp.ui.theme.screens.calculator.Calculator_Screen
+import com.luna.onlineapp.ui.theme.screens.dashboard.Dashboard_Screen
 import com.luna.onlineapp.ui.theme.screens.home.Home_Screen
+import com.luna.onlineapp.ui.theme.screens.intent.Intent_Screen
 import com.luna.onlineapp.ui.theme.screens.login.Login_Screen
 import com.luna.onlineapp.ui.theme.screens.myapp.My_App_Screen
+import com.luna.onlineapp.ui.theme.screens.myscreen.My_Screen
 import com.luna.onlineapp.ui.theme.screens.register.Register_Screen
 import com.luna.onlineapp.ui.theme.screens.splash.Splash_Screen
 
@@ -34,6 +38,18 @@ fun AppNavHost(modifier: Modifier = Modifier,
         }
         composable(ROUTE_MYAPP){
             My_App_Screen(navController)
+        }
+        composable(ROUTE_CALCULATOR){
+            Calculator_Screen(navController)
+        }
+        composable(ROUTE_INTENT){
+            Intent_Screen(navController)
+        }
+        composable(ROUTE_DASHBOARD){
+            Dashboard_Screen(navController)
+        }
+        composable(ROUTE_MYSCREEN){
+            My_Screen(navController)
         }
     }
 

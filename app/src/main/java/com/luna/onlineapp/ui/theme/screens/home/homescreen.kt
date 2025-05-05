@@ -29,6 +29,7 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
 import com.luna.onlineapp.R
 import com.luna.onlineapp.navigation.ROUTE_LOGIN
+import com.luna.onlineapp.navigation.ROUTE_MYAPP
 import com.luna.onlineapp.navigation.ROUTE_REGISTER
 import com.luna.onlineapp.ui.theme.PurpleGrey40
 import com.luna.onlineapp.ui.theme.PurpleGrey80
@@ -75,7 +76,7 @@ fun Home_Screen(navController:NavHostController) {
         }
 
 
-        Button(onClick = {},
+        Button(onClick = {navController.navigate(ROUTE_MYAPP)},
             colors = ButtonDefaults.buttonColors(Color.Cyan),
             modifier = Modifier
                 .width(280.dp)) {
